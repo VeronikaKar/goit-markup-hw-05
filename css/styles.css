@@ -653,10 +653,10 @@ img {
   border: none;
 }
 .modal-btn-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover .modal-close-svg,
-.modal-btn:focus .modal-close-svg {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
   fill: #ffffff;
 }
 .modal-caption {
@@ -698,7 +698,7 @@ img {
 .modal-form-input:focus {
   border-color: #4d5ae5;
 }
-.modal-form-input:focus + .modal-form-icon {
+.modal-form-icon:focus {
   fill: #4d5ae5;
 }
 .modal-form-name {
@@ -762,7 +762,9 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
 .agreement-checkbox-icon {
@@ -801,5 +803,5 @@ img {
 }
 .btn-accent:hover,
 .btn-accent:focus {
-  background-color: #404bbf;
+  background-color: #4d5ae5;
 }
