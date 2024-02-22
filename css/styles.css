@@ -572,6 +572,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 .footer-btn {
+  min-width: 165px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -588,9 +589,11 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 165px;
   height: 40px;
+  border: none;
 }
 .footer-icon-send {
   fill: #fff;
+  margin-left: 16px;
 }
 .backdrop {
   width: 100%;
@@ -654,9 +657,10 @@ img {
 }
 .modal-btn:hover .modal-close-svg,
 .modal-btn:focus .modal-close-svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 .modal-caption {
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
@@ -704,7 +708,9 @@ img {
   left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-form-box {
+  margin-bottom: 16px;
+}
 .modal-form-icon {
   position: absolute;
   top: 50%;
@@ -756,9 +762,7 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
 .agreement-checkbox-icon {
