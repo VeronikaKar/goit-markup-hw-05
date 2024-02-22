@@ -670,7 +670,7 @@ img {
 .modal-form {
 }
 .modal-form-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .modal-form-label {
   display: block;
@@ -716,8 +716,8 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #8e8f99;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message {
   color: rgba(46, 47, 66, 0.4);
@@ -786,6 +786,7 @@ img {
   .modal-agreement-checkbox {
   box-shadow: 0 0 0 4px rgba(64, 75, 191, 0.25);
 }
+
 .btn-accent {
   display: block;
   margin: 0 auto;
