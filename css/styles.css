@@ -67,6 +67,20 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  /* line-height: inherit; */
+}
+textarea {
+  resize: none;
+}
 /* ==============Header=============*/
 .page-header {
   display: flex;
@@ -576,7 +590,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -755,7 +768,6 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
 }
 
 .agreement-checkbox {
@@ -774,7 +786,7 @@ img {
 }
 
 .agreement-checkbox-icon {
-  fill: #8e8f99;
+  fill: #fff;
 }
 .agreement-link {
   color: #4d5ae5;
@@ -784,8 +796,7 @@ img {
 }
 .modal-input-agreement:checked + .modal-form-agreement .agreement-checkbox {
   background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
+  fill: #404bbf;
 }
 .modal-input-agreement:focus-visible
   + .modal-form-agreement
